@@ -2,7 +2,7 @@
   <img src="https://miro.medium.com/max/2052/1*QT7NIsR-X8_SKdtI7BTghw.png"/>
 </h1>
 
-### 🎞Demo
+### 🎞Preview
 
 ![desafio mobile](https://user-images.githubusercontent.com/52186505/81199000-81944400-8f98-11ea-998f-608c010adf4c.gif)
 
