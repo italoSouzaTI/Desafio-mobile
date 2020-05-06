@@ -1,5 +1,5 @@
 <h1 aling="center" >
-  <img src="https://blog.rocketseat.com.br/content/images/2018/12/nodejs-vale-a-pena-vantagens.jpg"/>
+  <img src="https://miro.medium.com/max/2052/1*QT7NIsR-X8_SKdtI7BTghw.png"/>
 </h1>
 
 ### 🎞Demo
@@ -44,6 +44,8 @@ Foi possível também testa o código, para ver se estava no padrão da rocketSe
     # Android com Emulador: 10.0.2.2 (Andorid Studio)
     # Android com Emulador: 10.0.3.2 (Genymotion)
     # Android como físico: IP máquina
+
+    #Para que a conexão seja, bem-sucedida a visualizão do likes no #dispostivo e preciso que o back-end esteja ligado e com dados setado #nele.
 
   #Executara o projeto no dispositivo mobile ou emulador.
   $ npx react-native run-android
