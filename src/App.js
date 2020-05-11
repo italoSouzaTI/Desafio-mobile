@@ -16,22 +16,22 @@ export default function App() {
   const [repositories, setRespositories] = useState([]);
 
   useEffect(() => {
-    api.get("respositores").then((reponse) => {
+    api.get("/repositories").then((response) => {
       setRespositories(response.data);
     });
   }, []);
   async function handleLikeRepository(id) {
     // Implement "Like Repository" functionality
-    const response = await api.post(`repositories/${id}/like`);
+    const response = await api.post(`/repositories/${id}/like`);
     const likedRepository = response.data;
-    const repositoriesUpdate = reposi.map((repository) => {
+    const repositoriesUpdate = repositories.map(repository => {
       if (repository.id === id) {
         return likedRepository;
       } else {
         return repository;
       }
-      setRespositories(repositoriesUpdate);
     });
+    setRespositories(repositoriesUpdate)
   }
 
   return (
@@ -46,7 +46,7 @@ export default function App() {
               <Text style={styles.repository}>{repository.title}</Text>
 
               <View style={styles.techsContainer}>
-                {repository.tech.map((tech) => (
+                {repository.techs.map((tech) => (
                   <Text key={tech} style={styles.tech}>
                     {tech}
                   </Text>
